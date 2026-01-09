@@ -5,7 +5,7 @@ This repository contains the most chemically accurate, open-source recreation of
 
 ## Credits & Attribution
 This research and formulation were conducted by **Zach at LabCoatz**.
-- **Full Video Documentary:** [The Secret to Making Coca-Cola](https://www.youtube.com/watch?v=TDkH3EbWTYc)
+- **Full Video Documentary:** [Perfectly Replicating Coca Cola (It Took Me A Year)](https://www.youtube.com/watch?v=TDkH3EbWTYc)
 - **Channel:** [LabCoatz Science](https://www.youtube.com/@LabCoatz_Science)
 
 ---
