@@ -1,0 +1,175 @@
+:root {
+    --bg: #0f1115;
+    --card-bg: #161b22;
+    --card-border: #30363d;
+    --text: #c9d1d9;
+    --text-muted: #8b949e;
+    --accent: #58a6ff;
+    --accent-dim: rgba(88, 166, 255, 0.15);
+    --danger: #f85149;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+
+h1, h2, h3, h4, .label, .value, .input-group label, code, pre {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+a { color: var(--accent); text-decoration: none; transition: color 0.2s; }
+a:hover { color: #79c0ff; text-decoration: underline; }
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* header */
+header {
+    border-bottom: 1px solid var(--card-border);
+    padding: 40px 0;
+    margin-bottom: 40px;
+}
+
+header h1 { margin: 0; font-size: 2.5rem; letter-spacing: -1px; }
+.badge {
+    background: var(--accent);
+    color: var(--bg);
+    font-size: 0.5em;
+    font-weight: 800;
+    padding: 4px 8px;
+    border-radius: 4px;
+    vertical-align: middle;
+    position: relative;
+    top: -2px;
+}
+
+/* card */
+.card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.2);
+}
+
+/* calculator */
+.science-panel h2 { margin-top: 0; color: var(--accent); }
+.panel-divider { border: none; border-top: 1px solid var(--card-border); margin: 30px 0; }
+
+.input-group { margin: 20px 0; }
+.input-group label { display: block; margin-bottom: 10px; font-weight: bold; color: var(--accent); }
+input[type="number"] {
+    background: var(--bg);
+    border: 2px solid var(--card-border);
+    color: white;
+    padding: 15px;
+    font-size: 1.5rem;
+    font-family: 'JetBrains Mono', monospace;
+    border-radius: 8px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.2s;
+}
+input[type="number"]:focus { outline: none; border-color: var(--accent); }
+
+.calc-step { margin-bottom: 35px; }
+.calc-step h3 { margin-bottom: 15px; font-size: 1.1rem; text-transform: uppercase; letter-spacing: 1px; }
+
+.step-ref { color: var(--accent); font-weight: bold; }
+.step-note {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    background: rgba(88, 166, 255, 0.05);
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 15px;
+    border-left: 3px solid var(--accent);
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 15px;
+}
+
+.result-item {
+    background: var(--bg);
+    padding: 20px 15px;
+    border-radius: 8px;
+    border: 1px solid var(--card-border);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.result-item .label {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: 8px;
+}
+
+.result-item .value {
+    display: block;
+    font-size: 1.6rem;
+    font-weight: 800;
+    color: white;
+}
+
+.result-item.highlight {
+    border-color: var(--accent);
+    background: var(--accent-dim);
+}
+.result-item.highlight .label { color: var(--accent); }
+
+/* markdown */
+.readme-mirror h1 { font-size: 2rem; border-bottom: 1px solid var(--card-border); padding-bottom: 10px; margin-top: 0; }
+.readme-mirror h2 { font-size: 1.5rem; margin-top: 40px; color: var(--accent); }
+.readme-mirror h3 { font-size: 1.2rem; margin-top: 30px; }
+.readme-mirror p { margin-bottom: 20px; }
+.readme-mirror hr { border: 0; border-top: 1px solid var(--card-border); margin: 40px 0; }
+
+/* markdown table */
+.readme-mirror table { 
+    width: 100%; 
+    border-collapse: collapse; 
+    margin: 25px 0; 
+    font-variant-numeric: tabular-nums; 
+}
+.readme-mirror th, .readme-mirror td { 
+    text-align: left; 
+    padding: 12px 15px; 
+    border-bottom: 1px solid var(--card-border); 
+}
+.readme-mirror th { 
+    color: var(--accent); 
+    font-family: 'JetBrains Mono', monospace; 
+    text-transform: uppercase; 
+    font-size: 0.9rem; 
+}
+.readme-mirror td { font-family: 'JetBrains Mono', monospace; }
+.readme-mirror tr:last-child td { border-bottom: none; }
+
+/* markdown lists */
+.readme-mirror ul, .readme-mirror ol { padding-left: 20px; margin-bottom: 20px; }
+.readme-mirror li { margin-bottom: 8px; }
+
+/* footer */
+footer {
+    border-top: 1px solid var(--card-border);
+    margin-top: 60px;
+    padding: 40px 0;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    text-align: center;
+    background: var(--bg);
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenCoke Scientific | LabCoatz Replica</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>OpenCoke <span class="badge">SCIENTIFIC</span></h1>
+            <p>The GC-MS Reverse Engineered Formula by <a href="https://www.youtube.com/@LabCoatz_Science" target="_blank">LabCoatz</a></p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="calculator" class="card science-panel">
+            <h2>🧪 Batch Calculator</h2>
+            <p>Determine exact measurements for your target batch size.</p>
+            
+            <div class="input-group">
+                <label for="liters">Desired Final Volume (Liters)</label>
+                <input type="number" id="liters" value="1" min="0.5" step="0.5">
+            </div>
+
+            <hr class="panel-divider">
+
+            <div class="calc-step">
+                <h3>Step 1: The Syrup Concentrate <sup class="step-ref">*</sup></h3>
+                <div class="results-grid syrup-group">
+                    <div class="result-item">
+                        <span class="label">Sugar (Sucrose)</span>
+                        <span class="value" id="res-sugar">104 g</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="label">Solution A (Flavor)</span>
+                        <span class="value" id="res-sol-a">1 mL</span>
+                    </div>
+                    <div class="result-item">
+                        <span class="label">Solution B (Base)</span>
+                        <span class="value" id="res-sol-b">10 mL</span>
+                    </div>
+                </div>
+                <p class="step-note">
+                    <sup class="step-ref">*</sup> <strong>Crucial Step:</strong> Combine these with a small amount of water. Heat to near-boil to marry flavors, cover immediately, and cool completely.
+                </p>
+            </div>
+
+            <div class="calc-step">
+                <h3>Step 2: Final Dilution</h3>
+                <div class="results-grid dilution-group">
+                     <div class="result-item highlight">
+                        <span class="label">Cold Carbonated Water</span>
+                        <span class="value" id="res-water">Fill to 1 L</span>
+                    </div>
+                </div>
+                <p class="step-note">Add the cooled syrup to a bottle, then top off with very cold carbonated water to your target volume.</p>
+            </div>
+        </section>
+
+        <article class="content readme-mirror">
+            {{ README_CONTENT }}
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p><strong>Licensed under the Liberty-ShareAlike Public License (LSA-1.0).</strong></p>
+            <p>You may use, share, and adapt this material for any purpose. If you distribute adaptations, you must license them under LSA-1.0 and include the full license text or a stable link to it.</p>
+            <p><a href="LICENSE">View Full License</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
