@@ -1,5 +1,5 @@
 # OpenCoke-Scientific
-## Recipe Version: Jan 8, 2026
+## Recipe Version: Jan 16, 2026
 
 This repository contains the most chemically accurate, open-source recreation of modern Coca-Cola ever published. Unlike "OpenCola" or the 1886 "Pemberton" recipes, this version is based on modern Gas Chromatography-Mass Spectrometry (GC-MS) analysis to identify the exact terpenoids and aromatic compounds used in the current commercial formula.
 
@@ -53,13 +53,13 @@ This creates the raw aromatic core (~100mL). Combine in a glass jar:
 Dissolve in ~200mL hot water, then dilute to **1 Liter** total:
 
 - **9.65 g** Caffeine Anhydrous
-- **175 g** Glycerin (Provides "body")
+- **160 g** Glycerin (Provides "body")
 - **45 mL** Phosphoric Acid (85% Food Grade)
 - **10 mL** Distilled White Vinegar (5% Acidity)
-- **8.0 g** Wine Tannins (For astringency)
+- **10 g** Wine Tannins (For astringency)
 - **10 mL** Vanilla Extract
-- **320 mL** Shank’s Caramel Color
-**Side Note:** Shank's is used for pH stability. If using other brands, adjust volume for color density.
+- **190 mL** Durkee Caramel Color
+**Side Note:** Durkee is preferred as it is stronger than Shank's. If you must use Shank's, increase volume to ~320 mL.
 
 ---
 
@@ -69,6 +69,13 @@ Dissolve in ~200mL hot water, then dilute to **1 Liter** total:
 2. **The Heat Treatment:** Microwave or heat until nearly boiling. Cover immediately to trap volatiles. This step is mandatory for flavor development.
 3. **Carbonation:** Once cool, dilute the syrup with **Cold Carbonated Water** to the 1-Liter mark.
 4. **Final Rest:** Refrigerate for 24 hours before drinking to let the CO2 and flavors unify.
+
+---
+
+## Variations
+
+### "Mexican" Coke Style
+If you prefer the profile of glass-bottle "Mexican" Coke, increase the **Lime Oil** ratio in the final mix. While the exact chemical difference hasn't been strictly isolated, increasing the lime note approximates this profile best.
 
 ---
 
